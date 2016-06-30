@@ -1,5 +1,5 @@
 var $ = require('jquery');
-var request = require('request');
+
 
 var personalToken = "dca9383003c26394d1a3fa61ed68c99d35f11123";
 var baseUrl = "http://api.github.com/repos/starkch/baddocs";
