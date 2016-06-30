@@ -1,13 +1,6 @@
 var unirest = require('unirest');
 var Promise = require('bluebird');
-
-// Public github
-//var personalToken = "dca9383003c26394d1a3fa61ed68c99d35f11123";
-
-// Enterprise, Autodesk, github starkc
-var personalToken = "a455cbed7d17458ba2e01fb32abf87c7cfbe0663";
-//nick
-//var personalToken = "931aeed3f39080f10d40597971f477149facd042";
+var credentials = require('./credentials');
 
 var unirestHelper = function() {
   
@@ -17,7 +10,7 @@ var headers = {
   'Accept': 'application/json',
   'Content-Type': 'application/json',
   'User-Agent': 'AutodeskBot',
-  'Authorization': 'token ' + personalToken
+  'Authorization': 'token ' + credentials.personalToken
 };
 
 unirestHelper.prototype.get = function(url) {

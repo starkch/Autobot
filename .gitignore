@@ -1,6 +1,7 @@
 legacy
 node_modules
 ngrok.exe
+credentials.js
 .vscode
 
 *.sqlite
