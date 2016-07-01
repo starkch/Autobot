@@ -35,7 +35,7 @@ var url = baseUrl + "/hooks?access_token=" + personalToken;
      },
       function (err, response) {
         if (err) {
-              console.log(err);
+              console.error(err);
         }
     }
     );
